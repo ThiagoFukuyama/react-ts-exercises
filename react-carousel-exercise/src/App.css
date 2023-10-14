@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.skip-carousel-controls-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    z-index: 3;
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.skip-carousel-controls-btn:focus-visible {
+    opacity: 1;
+}
+
+.carousel-section {
+    height: 90vh;
+    height: 90dvh;
+}
+
+.modal-section {
+    max-width: 1300px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    height: 100vh;
+    height: 100dvh;
+    padding-top: 3rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}

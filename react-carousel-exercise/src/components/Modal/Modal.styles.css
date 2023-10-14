@@ -1,0 +1,31 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal__content {
+    background-color: white;
+    max-width: 800px;
+    width: calc(100% - 2rem);
+    padding: 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__btn-toggle {
+    all: unset;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.modal__btn-toggle:focus-visible {
+    outline: 1px solid blue;
+}
